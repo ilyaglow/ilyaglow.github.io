@@ -46,7 +46,14 @@ ul {
 		}
 	}
 }
-
+blockquote {
+  color: $color-black;
+  border-left: 4px solid $color-black;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
 
 .wrapper {
 	max-width: 600px;
