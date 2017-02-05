@@ -3,7 +3,7 @@ permalink: /blog/:title
 
 
 # My variables
-name: Blog Title
+name: My Blog
 description: A Jekyll Theme
 google_verification: null
 
