@@ -7,9 +7,9 @@ To make your first blog post, just create a new markdown file in the `_posts` di
 
 # This is a header
 
-## Smaller header
-
 And this is a simple paragraph.
+
+## Smaller header
 
 This is how you **bold** & *italicize* text.
 
@@ -21,7 +21,9 @@ blockCode() {
 }
 ```
 
-# Here's a list
+# Another header
+
+And here's a list:
 
 * Item 1
 * Item 2
