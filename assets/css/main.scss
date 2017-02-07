@@ -26,10 +26,8 @@ a {
 	text-decoration: none;
   }
   &:hover {
-	color: $color-link;
-	text-decoration: none;
-	padding-bottom: 1px;
-	border-bottom: 1px solid $color-link;
+	 background-color: $color-grey;
+	 text-decoration: none;
   }
   &:active {
 	color: $color-link;
@@ -111,7 +109,7 @@ blockquote {
 	padding-bottom: 30px;
 	&__back {
 		a {
-			
+
 		}
 	}
 	&__title {
