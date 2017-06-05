@@ -3,9 +3,10 @@ permalink: /blog/:title
 
 
 # My variables
-name: My Blog
-description: A Jekyll Theme
+name: Ilya Glotov
+description: Researcher, OSS contributor
 google_verification: null
+encoding: "utf-8"
 
 
 # File management
