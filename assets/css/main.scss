@@ -36,7 +36,6 @@ a {
 }
 ul {
 	list-style: none;
-	line-height: 2;
 	li {
 		padding: 5px;
 		padding-left: 10px;
@@ -78,6 +77,7 @@ blockquote {
 	}
 	ul {
 		margin-top: 10px;
+		line-height: 2;
 		li {
 			display: inline;
 			padding: 0;
