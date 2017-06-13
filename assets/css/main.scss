@@ -7,7 +7,7 @@
 body {
 	color: $color-black;
 	background: $color-white;
-	font-family: 'Inconsolata', ;
+	font-family: 'Inconsolata', 'Roboto';
 	font-size: 120%;
 	font-weight: 400;
 }
@@ -94,18 +94,6 @@ blockquote {
 	}
 }
 
-.music {
-	padding-bottom: 30px;
-	h1 {
-		font-size: 1.4em;
-		margin-bottom: 5px;
-	}
-	a {
-		padding: 5px;
-		padding-left: 10px;
-	}
-}
-
 .post {
 	padding-bottom: 30px;
 	&__back {
@@ -171,6 +159,22 @@ blockquote {
 		em {
 			font-style: italic;
 		}
+		ol {
+			font-size: 1em;
+			margin-left: 30px;
+			margin-top: -10px;
+			margin-bottom: 15px;
+			li {
+				padding: 5px;
+				padding-left: 5px;
+				@media screen and (max-width: $br) {
+					padding: 10px 0 10px 0;
+				}
+			}
+			@media screen and (max-width: $br) {
+				margin-left: 10px;
+			}
+		}
 		ul {
 			font-size: 1em;
 			list-style: circle;
@@ -197,7 +201,6 @@ blockquote {
 			}
 		}
 		code {
-			padding: 3px;
 			font-size: 0.9em;
 			border-radius: 3px;
 			background: $color-grey;
