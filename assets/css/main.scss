@@ -4,11 +4,43 @@
 @import "reset";
 @import "config";
 
+@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(//fonts.googleapis.com/css?family=Roboto);
+
+@font-face {
+    font-family: 'InconsolataLGCRegular';
+    src: url('/assets/fonts/InconsolataLGCRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InconsolataLGCBold';
+    src: url('/assets/fonts/InconsolataLGCBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InconsolataLGCBoldItalic';
+    src: url('/assets/fonts/InconsolataLGCBoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'InconsolataLGCItalic';
+    src: url('/assets/fonts/InconsolataLGCItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
 body {
 	color: $color-black;
 	background: $color-white;
-	font-family: 'Inconsolata', 'Roboto';
-	font-size: 120%;
+	font-family: 'InconsolataLGCRegular', 'Inconsolata', 'Roboto';
+	font-size: 110%;
 	font-weight: 400;
 }
 h1 {
