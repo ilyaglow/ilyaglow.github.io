@@ -69,6 +69,7 @@ a {
 ul {
 	list-style: none;
 	li {
+		line-height: 150%;
 		padding: 5px;
 		padding-left: 10px;
 		@media screen and (max-width: $br) {
