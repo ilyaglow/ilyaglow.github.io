@@ -46,6 +46,12 @@ The example above achieves:
 * Extracts IPs using jq.
 * All this without saving a 50GB file to the disk.
 
+_Update_:
+I've made a docker for the latest jq github version, so you can do the same task like this:
+```
+curl -L -s https://opendata.rapid7.com/sonar.https/2018-04-24-1524531601-https_get_443.json.gz | gunzip | sudo docker run -i --rm ilyaglow/jq -r 'select((.data | @base64d) | match(".*wordpress.*", "i")) | .ip'
+```
+
 # Flow
 
 Basically, here is how my opendata research flow with [sonargrep](https://github.com/ilyaglow/sonargrep) now looks like:
