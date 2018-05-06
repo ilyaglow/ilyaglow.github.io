@@ -38,7 +38,9 @@ go install github.com/ilyaglow/sonargrep
 
 Here is how to get a list of Wordpress-related IPs:
 ```
-curl -L -s https://opendata.rapid7.com/sonar.https/2018-04-24-1524531601-https_get_443.json.gz | sonargrep -w wordpress -i | jq -r '.ip'
+curl -L -s https://opendata.rapid7.com/sonar.https/2018-04-24-1524531601-https_get_443.json.gz \
+    | sonargrep -w wordpress -i \
+    | jq -r '.ip'
 ```
 
 The example above achieves:
@@ -49,7 +51,10 @@ The example above achieves:
 _Update_:
 I've made a docker for the latest jq github version, so you can do the same task like this:
 ```
-curl -L -s https://opendata.rapid7.com/sonar.https/2018-04-24-1524531601-https_get_443.json.gz | gunzip | sudo docker run -i --rm ilyaglow/jq -r 'select((.data | @base64d) | match(".*wordpress.*", "i")) | .ip'
+alias jq="sudo docker run -i --rm ilyaglow/jq"
+curl -L -s https://opendata.rapid7.com/sonar.https/2018-04-24-1524531601-https_get_443.json.gz \
+    | gunzip \
+    | jq -r 'select((.data | @base64d) | match(".*wordpress.*", "i")) | .ip'
 ```
 
 # Flow
