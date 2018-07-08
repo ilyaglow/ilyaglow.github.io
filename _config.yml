@@ -1,24 +1,20 @@
 # Blog settings
 permalink: /blog/:title
 
-
 # My variables
 name: Ilya Glotov
-description: Researcher, OSS contributor
+description: Security researcher, OSS contributor
 google_verification: null
 encoding: "utf-8"
-
 
 # File management
 include: [".htaccess"]
 exclude: ["README.md", "LICENSE"]
 
-
 # Sass
 sass:
   style: :compressed
   sass_dir: _sass
-
 
 # Markdown
 markdown: kramdown
@@ -26,3 +22,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
+
+## Plugins
+plugins:
+  - jekyll-feed
