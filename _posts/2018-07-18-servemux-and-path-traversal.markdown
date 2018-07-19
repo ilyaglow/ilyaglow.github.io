@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ServeMux and path traversal exploitation
+title: ServeMux and a path traversal vulnerability
 categories: exploitation, websecurity, go
 tags: [go, websecurity, pathtraversal, exploitation]
 comments: true
