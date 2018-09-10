@@ -8,7 +8,7 @@ google_verification: null
 encoding: "utf-8"
 
 # File management
-include: [".htaccess"]
+include: [".htaccess", ".well-known"]
 exclude: ["README.md", "LICENSE"]
 
 # Sass
