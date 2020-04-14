@@ -3,12 +3,16 @@ layout: post
 title: ServeMux and a path traversal vulnerability
 categories: exploitation, websecurity, go
 tags: [go, websecurity, pathtraversal, exploitation]
+last_modified_at: 2020-04-14 9:50 +0000
 comments: true
 ---
 
-I really love Go language and write almost everything I do in it and it's a topic for other blog posts itself. Here we'll talk about pretty common path traversal vulnerability exploitation.
+I really love Go language and write almost everything I do in it and it's a
+topic for other blog posts itself. Here we'll talk about pretty common path
+traversal vulnerability exploitation.
 
-**TL;DR** Too many people think that `ServeMux` always sanitizes a URL request path when it's not. Well at least not *always*.
+**TL;DR** Too many people think that `ServeMux` always sanitizes a URL request
+path when it's not. Well at least not *always*.
 
 # Issue
 
@@ -93,7 +97,7 @@ curl -v --path-as-is 127.0.0.1:50000/somefile/../../etc/hostname
 ```
 
 
-Turns out that `ServeMux` canonicalize requested path so it's not *super easy* exploitable, but it still is.
+Turns out that a `ServeMux` canonicalize the requested path so it's not *super easy* exploitable, but it still is.
 
 Here goes the `CONNECT` method:
 ```sh
@@ -116,12 +120,14 @@ curl -v -X CONNECT --path-as-is 127.0.0.1:50000/../../proc/self/environ
 Bingo.
 
 
-I should note that this is an expected behaviour and [clearly documented](https://golang.org/pkg/net/http/#ServeMux.Handler) in `net/http` package docs:
+I should note that this is an expected behaviour and
+[clearly documented](https://golang.org/pkg/net/http/#ServeMux.Handler)
+in `net/http` package docs:
 > The path and host are used unchanged for CONNECT requests.
 
 # Remediation
 
-Use `filepath.FromSlash` accompanied with `path.Clean`:
+Use `filepath.FromSlash` accompanied with `path.Clean` and a [preceding forward slash](https://twitter.com/raphsutti/status/1248871606291542016/photo/1):
 ```diff
 diff --git a/main.go b/main.go
 index d50e6f3..91e5015 100644
@@ -149,4 +155,4 @@ index d50e6f3..91e5015 100644
 
 Also, it's a good practice to limit acceptable request methods.
 
-If you're not able to fix the code - put a vulnerable service behind a reverse proxy like nginx, that do not allow `CONNECT` method request by default.
+If you're not able to fix the code - put a vulnerable service behind a reverse proxy like nginx, that does not allow `CONNECT` method request by default.
