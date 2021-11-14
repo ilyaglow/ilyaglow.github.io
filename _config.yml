@@ -2,7 +2,7 @@
 permalink: /blog/:title
 
 # My variables
-name: Ilya Glotov
+name: Ilya Milov
 description: Security researcher, OSS contributor
 google_verification: null
 encoding: "utf-8"
