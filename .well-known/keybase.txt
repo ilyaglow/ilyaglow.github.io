@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ilyaglotov
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ilya.app
+  * I am ilyaglotov (https://keybase.io/ilyaglotov) on keybase.
+  * I have a public key ASD3m61ybmsVhKz98Yim7CDOjv6tyq1nbIL_uBNJOoqWUgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101abfb9915c90021d7f02c7fdc5f430feb324b0438454a79a474922782234cde000a",
+      "host": "keybase.io",
+      "kid": "0120f79bad726e6b1584acfdf188a6ec20ce8efeadcaad676c82ffb813493a8a96520a",
+      "uid": "0fd852c486a182345bb8ddc12ba25b19",
+      "username": "ilyaglotov"
+    },
+    "merkle_root": {
+      "ctime": 1636929891,
+      "hash": "4085fc7417ec16a7545fd2e3d8c23566e8950619df06f2ff6ecd2bbed5b63f02e1fcc17bb73d088485299be1e9f57d7aff1b5c373ae80827cb213f4c1639afe0",
+      "hash_meta": "b15c990a907a37247c986b849efc74629ad56740bb1b1621dfda1d16b6696085",
+      "seqno": 21220573
+    },
+    "service": {
+      "entropy": "oGPgq/I1s6EXNXZIvr8CmQDA",
+      "hostname": "ilya.app",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.8.0"
+  },
+  "ctime": 1636929899,
+  "expire_in": 504576000,
+  "prev": "2e91498343012d0d22d606174eedf6ebd0aaaa577e48893f330d90e11eb32465",
+  "seqno": 71,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg95utcm5rFYSs/fGIpuwgzo7+rcqtZ2yC/7gTSTqKllIKp3BheWxvYWTESpcCR8QgLpFJg0MBLQ0i1gYXTu3269Cqqld+SIk/Mw2Q4R6zJGXEIKrlGf2rRF4+ZnUL5tn45uX/bxZ60SdLy49SINIBGRczAgHCo3NpZ8RAPbnlFKdSDX2aleDfC2sWV1lJFF66YXGjB2iIjLXPbYaLxbZY+cZg1DueZWzRkbO/rBFI9OykUhIPYXGDxnRiBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIiBDnuflkvMElYl2Y6z5oSfZx8taWfKRn1zaGvKodxSo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ilyaglotov
+
+==================================================================
