@@ -1,4 +1,4 @@
-Contact: contact@ilyaglotov.com
+Contact: contact@ilya.app
 Encryption: https://keybase.io/ilyaglotov/pgp_keys.asc?fingerprint=cc2923c1c02fb18a3b84ce601f7e6992b027b333
 Acknowledgements: https://ilyaglotov.keybase.pub/acks.md
-Signature: https://ilyaglotov.com/.well-known/security.txt.sig
+Signature: https://ilya.app/.well-known/security.txt.sig
